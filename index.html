@@ -39,7 +39,7 @@
             <article class="about_text">
                 <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
                 <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
-                <button class="button_2">read more</button>
+                <button class="button_2">Read More</button>
             </article>
         </section>
 
@@ -53,7 +53,7 @@
         </section>
 
         <section class="instagram">
-            <h2>#coolerWithYou</h2>
+            <h2>#CoolerWithYou</h2>
             <img class="ig_icon" src="">
             <article class="ig_photos">
                 <img class="ig_1" src="pngs/ig_placeholder.png">
@@ -71,7 +71,14 @@
             </article>
         </section>
 
-        <section id="youtube_section"></section>
+        <section class="youtube">
+            <img class="youtube_icon" src="">
+            <template>
+                <h2>{TITLE}</h2>
+                <h3>by <span>{NAME}</span></h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/VxJflTs91jU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </template>
+        </section>
     </main>
 
     <footer>Copyright 2020</footer>
