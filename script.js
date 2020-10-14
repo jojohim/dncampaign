@@ -37,4 +37,3 @@ function showData(singleRowData) {
 
     document.querySelector('.youtube').appendChild(clone);
 }
-
