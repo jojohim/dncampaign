@@ -6,6 +6,7 @@ html {
 
 body {
     margin: 0;
+    height: 100%;
     padding: 0;
     box-sizing: border-box;
 }
@@ -19,7 +20,7 @@ body {
 }
 
 h1 {
-    font-family: "Helvetica", Sans-Serif;
+    font-family: "Helvetica Neue", Sans-Serif;
     color: var(--color-3);
     font-weight: bold;
     font-style: italic;
@@ -27,21 +28,21 @@ h1 {
 }
 
 h2 {
-    font-family: "Helvetica", Sans-Serif;
+    font-family: "Helvetica Neue", Sans-Serif;
     color: var(--color-5);
     font-weight: bolder;
     font-size: 2em;
 }
 
 h3 {
-    font-family: "Helvetica", Sans-Serif;
+    font-family: "Helvetica Neue", Sans-Serif;
     color: var(--color-5);
     font-weight: lighter;
     font-size: 1em;
 }
 
 p {
-    font-family: "Helvetica", Sans-Serif;
+    font-family: "Helvetica Neue", Sans-Serif;
     color: var(--color-5);
     font-weight: normal;
     font-size: 1.1em;
@@ -73,6 +74,7 @@ nav a:hover {
 
 .logo {
     position: absolute;
+    padding: 1.5em;
     max-width: 5em;
     padding: 1em 2em;
 }
@@ -113,14 +115,15 @@ main > .top {
 }
 
 .top_image {
-    width: 62em;
-    margin-left: -9em;
+    width: 100%;
+    margin: 0;
 }
 
 /***ABOUT SECTION***/
 
 main > .about {
     grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    background-color: var(--color-2);
 }
 
 .about_title {
@@ -132,6 +135,7 @@ main > .about {
     background-color: var(--color-1);
     margin: 2em;
     justify-content: space-between;
+    background-color: var(--color-2);
 }
 
 .about h2 {
@@ -166,7 +170,7 @@ main > .product {
 
 .product img {
     width: 28em;
-    padding: 0 1.5em 5em 0em;
+    padding: 0 0em 5em 1.5em;
 }
 
 #shop-head {
@@ -187,19 +191,13 @@ main > .product {
 main > .instagram {
     text-align: center;
     background-color: var(--color-2);
-    padding-left: 1em;
-    padding-right: 1em;
-    padding-bottom: 10em;
-    padding-top: 0em;
+
 }
 
 .instagram h2 {
     color: var(--color-4);
-    font-size: 4em;
-    transform: rotate(270deg);
-    position: relative;
-    top: 7.3em;
-    left: -11em
+    padding-top: 1.5em;
+    font-size: 3.5em;
 }
 
 .instagram img {
@@ -218,9 +216,17 @@ main > .instagram {
 /***YOUTUBE SECTION***/
 
 main > .youtube {
-    grid-template-rows: repeat(auto-fit, minmax(340px, 1fr));
     justify-content: center;
     background-color: var(--color-1);
+    margin-bottom: 8em;
+}
+
+.youtube h2 {
+    text-align: center;
+    color: var(--color-3);
+    font-size: 2.5em;
+    padding-top: 4em;
+    padding-bottom: 1em;
 }
 
 /***BUTTONS***/
@@ -232,7 +238,7 @@ main > .youtube {
     padding: 0.5em 2em;
     margin-top: 1.2em;
     margin-bottom: 2em;
-    font-family: 'Helvetica', sans-serif;
+    font-family: 'Helvetica Neue', sans-serif;
     font-size: 1.5em;
     color: var(--color-3);
     text-align: center;
@@ -246,19 +252,114 @@ main > .youtube {
 
 .button_2 {
     background-color: var(--color-1);
+    margin-left: 35%;
     border: none;
     padding: 0.5em 1.8em;
     margin-bottom: 1em;
-    font-family: 'Helvetica', sans-serif;
+    font-family: 'Helvetica Neue', sans-serif;
     font-size: 1.2em;
     color: var(--color-4);
+    background-color: var(--color-2);
 }
 
 .button_2:hover {
-    color: var(--color-2);
+    color: var(--color-5);
     cursor: pointer;
 }
 
 /***FOOTER***/
 
+footer {
+        background: var(--color-5);
+}
+.footer-content {
+    display: flex;
+    height: 400px;
+}
+
+.footer-content .footer-section {
+    padding: 2em 0em 0em 10em;
+    flex: 1;
+}
+
+.footer-content .footer-section h3 {
+    color: var(--color-2);
+    font-size: 1.5em;
+}
+
+.footer-content .footer-section li{
+    color: var(--color-2);
+    font-family: 'helvetica neue';
+    font-weight: 100;
+    list-style: none;
+    margin-left: 0;
+}
+
+.email , .message {
+    background-color: var(--color-2);
+    margin-right: 2em;
+    padding-left: 1rem;
+    line-height: 2em;
+    border-radius: 2em;
+}
+
+.message {
+    padding-bottom: 3em;
+    line-height: 3em;
+    margin-bottom: 1em;
+}
+
+.send {
+    border: none;
+    border-radius: 2em;
+    padding: 0 3em 0em 3em;
+    text-align: center;
+}
+
+.send:hover, .send p:hover {
+    border: 0.09em solid var(--color-2);
+    background-color: var(--color-5);
+    cursor: pointer;
+    color: var(--color-2);
+}
+
+.sm-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.sm-wrapper img {
+    height: 3em;
+    padding: 1em;
+
+}
 /***MEDIA QUERIES***/
+
+@media only screen and (max-width: 1020px) {
+
+    nav a {
+            padding: 0.5em;
+    font-size: 0.75em;
+    }
+    .logo {
+        height: 5em;
+    }
+    .top-image {
+        height: 10em;
+    }
+
+    .instagram img {
+    width: 20em;
+}
+
+
+    .footer-section {
+        display: none;
+    }
+
+    footer {
+        height: 500px;
+    }
+
+
+}
