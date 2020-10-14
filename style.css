@@ -103,7 +103,7 @@ main > .top {
 }
 
 .top_text h1 {
-    font-size: 4em;
+    font-size: 3.8em;
 }
 
 .top_text h3 {
@@ -115,8 +115,13 @@ main > .top {
 }
 
 .top_image {
+<<<<<<< HEAD
     width: 100%;
     margin: 0;
+=======
+    width: 61em;
+    margin-left: -13em;
+>>>>>>> origin/master
 }
 
 /***ABOUT SECTION***/
@@ -162,28 +167,37 @@ main > .product {
     text-align: center;
 }
 
-#shop-head h2 {
+.shop_head h2 {
     color: var(--color-3);
     font-size: 2em;
     margin-left: -1em;
 }
 
+<<<<<<< HEAD
 .product img {
     width: 28em;
     padding: 0 0em 5em 1.5em;
 }
 
 #shop-head {
+=======
+.shop_head {
+>>>>>>> origin/master
     display: flex;
     justify-content: center;
     margin-top: 5em;
     margin-bottom: 5em;
 }
 
-#shop-head img {
+.shop_head img {
     max-height:6em;
     max-width: 6em;
     margin-right: -1em;
+}
+
+.product img {
+    width: 25em;
+    padding: 0 1.5em 5em 0em;
 }
 
 /***IG SECTION***/
@@ -196,6 +210,7 @@ main > .instagram {
 
 .instagram h2 {
     color: var(--color-4);
+<<<<<<< HEAD
     padding-top: 1.5em;
     font-size: 3.5em;
 }
@@ -203,14 +218,23 @@ main > .instagram {
 .instagram img {
     width: 20em;
     margin: 1em;
+=======
+    font-size: 4em;
+    padding-top: 1.2em;
+>>>>>>> origin/master
 }
 
-#ig-head img {
+.ig_head img {
     display: flex;
     max-height: 5em;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: -2.5em;
+}
+
+.instagram img {
+    width: 20em;
+    margin: 1em;
 }
 
 /***YOUTUBE SECTION***/
@@ -227,6 +251,24 @@ main > .youtube {
     font-size: 2.5em;
     padding-top: 4em;
     padding-bottom: 1em;
+}
+
+.youtube_head img {
+    display: flex;
+    max-height: 5em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -2.1em;
+}
+
+.youtube h2 {
+    color: var(--color-5);
+    font-size: 2em;
+    padding-top: 3.5em;
+}
+
+.youtube iframe {
+    margin-top: -10em
 }
 
 /***BUTTONS***/
@@ -263,7 +305,11 @@ main > .youtube {
 }
 
 .button_2:hover {
+<<<<<<< HEAD
     color: var(--color-5);
+=======
+    color: var(--color-3);
+>>>>>>> origin/master
     cursor: pointer;
 }
 
