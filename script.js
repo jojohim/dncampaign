@@ -27,12 +27,14 @@ function showData(singleRowData) {
     const h3_span = clone.querySelector('h3 span');
     h3_span.textContent = singleRowData.gsx$name.$t;
 
-    const ytLink = "https://www.youtube.com/" + singleRowData.gsx$youtubeembed.$t;
-    console.log(ytLink)
+    const ytLink = "https://www.youtube.com/embed/" + singleRowData.gsx$youtubeembed.$t;
 
-    //https://www.youtube.com/watch?v=VxJflTs91jU
+    console.log(ytLink)
+    console.log("1");
+    console.log("2");
 
     clone.querySelector('iframe').src = ytLink;
 
     document.querySelector('.youtube').appendChild(clone);
 }
+
