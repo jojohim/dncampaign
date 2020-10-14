@@ -23,14 +23,14 @@ h1 {
     color: var(--color-3);
     font-weight: bold;
     font-style: italic;
-    font-size: 2em;
+    font-size: 2.5em;
 }
 
 h2 {
     font-family: "Helvetica", Sans-Serif;
     color: var(--color-5);
     font-weight: bolder;
-    font-size: 1.5em;
+    font-size: 2em;
 }
 
 h3 {
@@ -44,7 +44,7 @@ p {
     font-family: "Helvetica", Sans-Serif;
     color: var(--color-5);
     font-weight: normal;
-    font-size: 0.8em;
+    font-size: 1.1em;
 }
 
 /***HEADER AND NAV***/
@@ -61,8 +61,8 @@ nav {
 
 nav a {
     text-decoration: none;
-    padding: 0.5em;
-    font-size: 0.8em;
+    padding: 1em;
+    font-size: 1.1em;
     font-family: "Helvetica", Sans-Serif;
     color: var(--color-5)
 }
@@ -98,11 +98,10 @@ main > .top {
 
 .top_text {
     text-align: center;
-    margin: 2em;
 }
 
 .top_text h1 {
-    font-size: 3em;
+    font-size: 4em;
 }
 
 .top_text h3 {
@@ -114,8 +113,8 @@ main > .top {
 }
 
 .top_image {
-    width: 50em;
-    margin-left: -5em;
+    width: 62em;
+    margin-left: -9em;
 }
 
 /***ABOUT SECTION***/
@@ -131,20 +130,25 @@ main > .about {
 
 .about_text {
     background-color: var(--color-1);
+    margin: 2em;
     justify-content: space-between;
 }
 
 .about h2 {
     color: var(--color-1);
-    margin-top: 7em;
-    text-transform: uppercase;
-    letter-spacing: 0.2em;
+    margin-top: 4.5em;
+    font-size: 2.5em;
+
 }
 
 .about p {
     color: var(--color-5);
     margin: 3em;
     text-align: left;
+}
+
+.about_text {
+    align-content: center;
 }
 
 /***PRODUCT SECTION***/
@@ -154,15 +158,28 @@ main > .product {
     text-align: center;
 }
 
-.product h2 {
+#shop-head h2 {
     color: var(--color-3);
     font-size: 2em;
-    padding-top: 3.5em;
+    margin-left: -1em;
 }
 
 .product img {
-    width: 25em;
-    padding-bottom: 5em;
+    width: 28em;
+    padding: 0 1.5em 5em 0em;
+}
+
+#shop-head {
+    display: flex;
+    justify-content: center;
+    margin-top: 5em;
+    margin-bottom: 5em;
+}
+
+#shop-head img {
+    max-height:6em;
+    max-width: 6em;
+    margin-right: -1em;
 }
 
 /***IG SECTION***/
@@ -172,8 +189,8 @@ main > .instagram {
     background-color: var(--color-2);
     padding-left: 1em;
     padding-right: 1em;
-    padding-bottom: 5em;
-    padding-top: -5em;
+    padding-bottom: 10em;
+    padding-top: 0em;
 }
 
 .instagram h2 {
@@ -182,12 +199,20 @@ main > .instagram {
     transform: rotate(270deg);
     position: relative;
     top: 7.3em;
-    left: -8em
+    left: -11em
 }
 
 .instagram img {
     width: 20em;
     margin: 1em;
+}
+
+#ig-head img {
+    display: flex;
+    max-height: 5em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -2.5em;
 }
 
 /***YOUTUBE SECTION***/
